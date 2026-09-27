@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}Inicio - Películas{% endblock %}
+{% block encabezado %}Películas{% endblock %}
+{% block subtitulo %}¿¿Has visto alguna película?? AQUI LAS ENCONTRARAS OMG OMG{% endblock %}
+
+{% block contenido %}
+    <div class="text-center">
+        <a href="{% url 'peliculas:catalogo' %}" class="btn btn-gold">Ver catálogo completo</a>
+    </div>
+{% endblock %}

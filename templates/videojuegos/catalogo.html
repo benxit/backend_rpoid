@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}Catálogo de Videojuegos{% endblock %}
+{% block encabezado %}Catálogo de Videojuegos{% endblock %}
+{% block subtitulo %}Explora todos los juegos disponibles{% endblock %}
+
+{% block contenido %}
+    <div class="row g-4">
+        {% for juego in juegos %}
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="poster-card">
+                <img src="{% static juego.imagen %}" alt="{{ juego.nombre }}">
+                <div class="poster-body">
+                    <p class="poster-title">{{ juego.nombre }}</p>
+                    <p class="poster-meta">{{ juego.genero }} · {{ juego.plataforma }}</p>
+                    <span class="poster-year">{{ juego.anio }}</span>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>No hay videojuegos para mostrar.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

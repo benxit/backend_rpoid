@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}Inicio - Videojuegos{% endblock %}
+{% block encabezado %}Videojuegos{% endblock %}
+{% block subtitulo %}Los mejores juego que son GOOOOOOOD!!!!{% endblock %}
+
+{% block contenido %}
+    <div class="text-center">
+        <a href="{% url 'videojuegos:catalogo' %}" class="btn btn-gold">Ver catálogo completo</a>
+    </div>
+{% endblock %}

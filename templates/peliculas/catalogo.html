@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}Catálogo de Películas{% endblock %}
+{% block encabezado %}Catálogo de Películas{% endblock %}
+{% block subtitulo %}Explora todas las películas disponibles{% endblock %}
+
+{% block contenido %}
+    <div class="row g-4">
+        {% for pelicula in peliculas %}
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="poster-card">
+                <img src="{% static pelicula.imagen %}" alt="{{ pelicula.titulo }}">
+                <div class="poster-body">
+                    <p class="poster-title">{{ pelicula.titulo }}</p>
+                    <p class="poster-meta">{{ pelicula.genero }} · {{ pelicula.director }}</p>
+                    <span class="poster-year">{{ pelicula.anio }}</span>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>No hay películas para mostrar.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
