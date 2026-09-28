@@ -1,8 +1,8 @@
 [
-  {"nombre":"Salvo a nachitot","genero":"Sandbox","plataforma":"PC","anio":2011,"imagen":"images/videojuegos/minecraft.jpg"},
-  {"nombre":"Grand Theft Auto V","genero":"Acción y aventura","plataforma":"PC","anio":2013,"imagen":"images/videojuegos/gta5.jpg"},
-  {"nombre":"Red Dead Redemption 2","genero":"Acción y aventura","plataforma":"PC","anio":2018,"imagen":"images/videojuegos/rdr2.jpg"},
-  {"nombre":"Cyberpunk 2077","genero":"RPG","plataforma":"PC","anio":2020,"imagen":"images/videojuegos/cyberpunk.jpg"},
-  {"nombre":"Forza Horizon 5","genero":"Carreras","plataforma":"PC","anio":2021,"imagen":"images/videojuegos/forza.jpg"},
-  {"nombre":"The Witcher 3","genero":"RPG","plataforma":"PC","anio":2015,"imagen":"images/videojuegos/witcher3.jpg"}
+  {"nombre":"Salvo a nachitot","genero":"Sandbox","plataforma":"PC","anio":2011,"imagen":"images/videojuegos/minecraft.jpg","precio":19990},
+  {"nombre":"Grand Theft Auto V","genero":"Acción y aventura","plataforma":"PC","anio":2013,"imagen":"images/videojuegos/gta5.jpg","precio":14990},
+  {"nombre":"Red Dead Redemption 2","genero":"Acción y aventura","plataforma":"PC","anio":2018,"imagen":"images/videojuegos/rdr2.jpg","precio":29990},
+  {"nombre":"Cyberpunk 2077","genero":"RPG","plataforma":"PC","anio":2020,"imagen":"images/videojuegos/cyberpunk.jpg","precio":24990},
+  {"nombre":"Forza Horizon 5","genero":"Carreras","plataforma":"PC","anio":2021,"imagen":"images/videojuegos/forza.jpg","precio":34990},
+  {"nombre":"The Witcher 3","genero":"RPG","plataforma":"PC","anio":2015,"imagen":"images/videojuegos/witcher3.jpg","precio":12990}
 ]

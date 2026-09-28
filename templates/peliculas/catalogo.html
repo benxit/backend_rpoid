@@ -6,6 +6,14 @@
 {% block subtitulo %}Explora todas las películas disponibles{% endblock %}
 
 {% block contenido %}
+    <div class="toolbar">
+        <form method="get" action="{% url 'peliculas:catalogo' %}" role="search">
+            <input type="text" name="q" class="form-control" placeholder="Buscar película..." value="{{ query|default:'' }}">
+            <button type="submit" class="btn btn-outline-gold">Buscar</button>
+        </form>
+        <a href="{% url 'admin:peliculas_pelicula_add' %}" class="btn btn-gold">+ Agregar película</a>
+    </div>
+
     <div class="row g-4">
         {% for pelicula in peliculas %}
         <div class="col-6 col-md-4 col-lg-3">
@@ -15,6 +23,11 @@
                     <p class="poster-title">{{ pelicula.titulo }}</p>
                     <p class="poster-meta">{{ pelicula.genero }} · {{ pelicula.director }}</p>
                     <span class="poster-year">{{ pelicula.anio }}</span>
+                    <p class="poster-price">${{ pelicula.precio|floatformat:0 }}</p>
+                </div>
+                <div class="poster-actions">
+                    <a href="{% url 'admin:peliculas_pelicula_change' pelicula.id %}" class="btn btn-sm btn-outline-gold">Modificar</a>
+                    <a href="{% url 'admin:peliculas_pelicula_delete' pelicula.id %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
                 </div>
             </div>
         </div>

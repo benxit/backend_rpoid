@@ -1,0 +1,25 @@
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Variables de entorno (contiene credenciales, NO se sube)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Base de datos local (SQLite, solo para pruebas)
+db.sqlite3
+
+# Django
+*.log
+staticfiles/
+media/
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store

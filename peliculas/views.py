@@ -1,14 +1,15 @@
-import json
-from pathlib import Path
 from django.shortcuts import render
 
-BASE_DIR = Path(__file__).resolve().parent
+from .models import Pelicula
+
 
 def inicio(request):
     return render(request, 'peliculas/inicio.html')
 
+
 def catalogo(request):
-    ruta_json = BASE_DIR / 'data' / 'peliculas.json'
-    with open(ruta_json, encoding='utf-8') as archivo:
-        peliculas = json.load(archivo)
-    return render(request, 'peliculas/catalogo.html', {'peliculas': peliculas})
+    query = request.GET.get('q', '').strip()
+    peliculas = Pelicula.objects.select_related('genero', 'director').all()
+    if query:
+        peliculas = peliculas.filter(titulo__icontains=query)
+    return render(request, 'peliculas/catalogo.html', {'peliculas': peliculas, 'query': query})

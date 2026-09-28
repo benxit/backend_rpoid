@@ -6,6 +6,14 @@
 {% block subtitulo %}Explora todos los juegos disponibles{% endblock %}
 
 {% block contenido %}
+    <div class="toolbar">
+        <form method="get" action="{% url 'videojuegos:catalogo' %}" role="search">
+            <input type="text" name="q" class="form-control" placeholder="Buscar videojuego..." value="{{ query|default:'' }}">
+            <button type="submit" class="btn btn-outline-gold">Buscar</button>
+        </form>
+        <a href="{% url 'admin:videojuegos_videojuego_add' %}" class="btn btn-gold">+ Agregar videojuego</a>
+    </div>
+
     <div class="row g-4">
         {% for juego in juegos %}
         <div class="col-6 col-md-4 col-lg-3">
@@ -15,6 +23,11 @@
                     <p class="poster-title">{{ juego.nombre }}</p>
                     <p class="poster-meta">{{ juego.genero }} · {{ juego.plataforma }}</p>
                     <span class="poster-year">{{ juego.anio }}</span>
+                    <p class="poster-price">${{ juego.precio|floatformat:0 }}</p>
+                </div>
+                <div class="poster-actions">
+                    <a href="{% url 'admin:videojuegos_videojuego_change' juego.id %}" class="btn btn-sm btn-outline-gold">Modificar</a>
+                    <a href="{% url 'admin:videojuegos_videojuego_delete' juego.id %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
                 </div>
             </div>
         </div>
