@@ -1,8 +1,0 @@
-[
-    {"nombre": "Caminadora ProRun X1", "categoria": "Cardio", "marca": "Life Fitness", "anio": 2023, "precio": 890000, "imagen": "images/gimnasio/caminadora.svg"},
-    {"nombre": "Bicicleta Spinning Elite", "categoria": "Cardio", "marca": "Technogym", "anio": 2022, "precio": 650000, "imagen": "images/gimnasio/bicicleta.svg"},
-    {"nombre": "Rack de Sentadillas Pro", "categoria": "Fuerza", "marca": "Rogue", "anio": 2021, "precio": 450000, "imagen": "images/gimnasio/rack.svg"},
-    {"nombre": "Multiestacion Functional Trainer", "categoria": "Funcional", "marca": "Matrix", "anio": 2023, "precio": 1200000, "imagen": "images/gimnasio/multiestacion.svg"},
-    {"nombre": "Set Mancuernas Ajustables", "categoria": "Fuerza", "marca": "Rogue", "anio": 2020, "precio": 320000, "imagen": "images/gimnasio/mancuernas.svg"},
-    {"nombre": "Kit Bandas de Movilidad", "categoria": "Movilidad", "marca": "Technogym", "anio": 2022, "precio": 25000, "imagen": "images/gimnasio/bandas.svg"}
-]
