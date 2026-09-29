@@ -1,8 +1,0 @@
-[
-    {"nombre": "Papas Fritas Clasicas", "categoria": "Papas fritas", "marca": "Lays", "anio": 1932, "precio": 1500, "imagen": "images/comida_chatarra/papas.svg"},
-    {"nombre": "Combo Hamburguesa Doble", "categoria": "Hamburguesas", "marca": "McDonald's", "anio": 1967, "precio": 4200, "imagen": "images/comida_chatarra/hamburguesa.svg"},
-    {"nombre": "Chocolate Relleno", "categoria": "Dulces", "marca": "Nestle", "anio": 1935, "precio": 900, "imagen": "images/comida_chatarra/chocolate.svg"},
-    {"nombre": "Bebida Cola 350ml", "categoria": "Bebidas", "marca": "Coca-Cola", "anio": 1886, "precio": 1200, "imagen": "images/comida_chatarra/bebida.svg"},
-    {"nombre": "Nuggets de Pollo", "categoria": "Hamburguesas", "marca": "McDonald's", "anio": 1983, "precio": 3500, "imagen": "images/comida_chatarra/nuggets.svg"},
-    {"nombre": "Nachos con Queso", "categoria": "Papas fritas", "marca": "Lays", "anio": 1964, "precio": 1800, "imagen": "images/comida_chatarra/nachos.svg"}
-]
