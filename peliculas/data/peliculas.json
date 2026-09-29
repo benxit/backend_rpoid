@@ -1,8 +1,0 @@
-[
-  {"titulo":"Interstellar","genero":"Ciencia ficción","anio":2014,"director":"Christopher Nolan","imagen":"images/peliculas/interstellar.jpg","precio":3990},
-  {"titulo":"The Batman","genero":"Acción y suspenso","anio":2022,"director":"Matt Reeves","imagen":"images/peliculas/batman.jpg","precio":4490},
-  {"titulo":"Avengers: Endgame","genero":"Acción","anio":2019,"director":"Anthony y Joe Russo","imagen":"images/peliculas/endgame.jpg","precio":3990},
-  {"titulo":"Dune","genero":"Ciencia ficción","anio":2021,"director":"Denis Villeneuve","imagen":"images/peliculas/dune.jpg","precio":4290},
-  {"titulo":"Joker","genero":"Drama y suspenso","anio":2019,"director":"Todd Phillips","imagen":"images/peliculas/joker.jpg","precio":3490},
-  {"titulo":"Top Gun: Maverick","genero":"Acción","anio":2022,"director":"Joseph Kosinski","imagen":"images/peliculas/topgun.jpg","precio":4490}
-]
